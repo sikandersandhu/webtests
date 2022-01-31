@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.thegoate:restassured:0.15.8.202201171722">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/thegoate/restassured/0.15.8.202201171722/restassured-0.15.8.202201171722.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/thegoate/restassured/0.15.8.202201171722/restassured-0.15.8.202201171722-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/thegoate/restassured/0.15.8.202201171722/restassured-0.15.8.202201171722-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
