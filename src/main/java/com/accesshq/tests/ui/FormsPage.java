@@ -87,4 +87,14 @@ public class FormsPage {
     public String getErrorMessageCheckBox(){
         return driver.findElement(By.id("agree-err")).getText();
     }
+
+    // get popup message text
+    public String createPopUpMessage() {
+        return driver.findElement(By.cssSelector(".snackbar")).getText();
+    }
+
+    // check if pop up is visible
+    public boolean isPopUpVisible() {
+        return driver.findElement(By.cssSelector(".snackbar")).isDisplayed();
+    }
 }

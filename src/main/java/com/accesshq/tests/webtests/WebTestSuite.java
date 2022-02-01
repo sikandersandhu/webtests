@@ -3,6 +3,7 @@ package com.accesshq.tests.webtests;
 import com.accesshq.tests.ui.FormsPage;
 import com.accesshq.tests.ui.States;
 import org.junit.jupiter.api.*;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class WebTestSuite extends BaseTestSuite{
@@ -11,12 +12,20 @@ public class WebTestSuite extends BaseTestSuite{
 
     @Test
     void TestFormsPageSuccess() {
+
+        //ARRANGE
+
         // click on menu tab
         menu.clickForms();
         // instantiate forms page
         formsPage = new FormsPage(driver);
+
+        // ACT
+
         // set name
-        formsPage.setName("Sikander");
+        String name = "Sikander";
+
+        formsPage.setName(name);
         //set email
         formsPage.setEmail("sikandersandhu82@gmail.com");
         // select state
@@ -25,6 +34,19 @@ public class WebTestSuite extends BaseTestSuite{
         formsPage.clickAgree();
         // submit form
         formsPage.submitForm();
+
+        // set wait time till pop up appears
+        new WebDriverWait(driver, 10).until(d -> formsPage.isPopUpVisible());
+
+        // expected pop up message
+        String expected = "Thanks for your feedback " + name;
+
+        // ASSERT
+
+        // check that expected message matched actual pop up message
+        // assert that thank you pop-up message appears with the right message
+        Assertions.assertEquals(expected, formsPage.createPopUpMessage());
+
     }
 
     // Leave all field blank. Only click submit
@@ -47,3 +69,12 @@ public class WebTestSuite extends BaseTestSuite{
 
     }
 }
+
+
+// WAIT TIMES
+
+// time consuming approach, very crude as speed matters | last resort
+//Thread.sleep(1000);
+
+// more sensible waiting strategy
+// look in setup base class | using implicit wait on driver

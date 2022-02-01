@@ -1,4 +1,4 @@
-package com.accesshq.tests.ui;
+package com.accesshq.tests.webtests;
 
 import org.openqa.selenium.WebDriver;
 

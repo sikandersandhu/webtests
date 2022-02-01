@@ -1,16 +1,15 @@
 package com.accesshq.tests.webtests;
 
-import com.accesshq.tests.ui.Menu;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
-abstract class BaseTestSuite {
+public class BaseTestSuite {
 
     protected WebDriver driver;
-    Menu menu;
+    protected Menu menu;
 
     @BeforeEach
     void setUp() {
@@ -21,6 +20,7 @@ abstract class BaseTestSuite {
         // set window size to max
         driver.manage().window().maximize();
         // set implicit wait time
+        // this approach keeps checking if action is done, if done it will exit prior to time time out set
         driver.manage().timeouts().implicitlyWait(Util.WAIT_TIME, TimeUnit.SECONDS);
         // set menu
         menu = new Menu(driver);
