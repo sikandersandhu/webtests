@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.accesshq.tests.webtests.PlanetsTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.062 s - in com.accesshq.tests.webtests.PlanetsTests
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.66 s <<< FAILURE! - in com.accesshq.tests.webtests.PlanetsTests
+assertPlanetName  Time elapsed: 4.594 s  <<< ERROR!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIKANDER', ip: '192.168.1.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: driver.version: RemoteWebDriver
+Caused by: java.net.UnknownHostException: No such host is known (selenium-hub)
+

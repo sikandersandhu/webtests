@@ -27,9 +27,9 @@ public class BaseTests {
 
         // Selenium grid to run tests in multiple browsers | parallel testing
 
-        var chromeOptions = new ChromeOptions();
+        //var chromeOptions = new ChromeOptions();
         var firefoxOptions = new FirefoxOptions();
-        driver = new RemoteWebDriver (new URL("http://selenium-hub:4444/wd/hub"), chromeOptions);
+        //driver = new RemoteWebDriver (new URL("http://selenium-hub:4444/wd/hub"), chromeOptions);
         driver = new RemoteWebDriver (new URL("http://selenium-hub:4444/wd/hub"), firefoxOptions);
 
 
