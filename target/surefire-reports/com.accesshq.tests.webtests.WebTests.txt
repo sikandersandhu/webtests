@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.accesshq.tests.webtests.WebTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.923 s <<< FAILURE! - in com.accesshq.tests.webtests.WebTests
+TestFormsPageSuccess  Time elapsed: 6.867 s  <<< ERROR!
+org.openqa.selenium.JavascriptException: 
+javascript error: Failed to execute 'getComputedStyle' on 'Window': parameter 1 is not of type 'Element'.
+  (Session info: chrome=75.0.3770.80)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIKANDER', ip: '192.168.1.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.80, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: /tmp/.com.google.Chrome.iLNzh7}, goog:chromeOptions: {debuggerAddress: localhost:35781}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: e3c4c54e3519065618e02199196...}
+Session ID: e3c4c54e3519065618e02199196576f7
+	at com.accesshq.tests.webtests.WebTests.TestFormsPageSuccess(WebTests.java:32)
+

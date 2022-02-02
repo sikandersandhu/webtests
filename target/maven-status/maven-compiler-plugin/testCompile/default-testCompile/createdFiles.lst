@@ -1,0 +1,15 @@
+com\accesshq\tests\strategies\NameMatch.class
+com\accesshq\tests\ui\States.class
+com\accesshq\tests\strategies\RadiusMatch.class
+com\accesshq\tests\webtests\PlanetsTests.class
+com\accesshq\tests\strategies\DistanceMatch.class
+com\accesshq\tests\ui\PlanetsPage.class
+com\accesshq\tests\webtests\WebTests.class
+com\accesshq\tests\ui\FormsPage.class
+com\accesshq\tests\webtests\BaseTests.class
+com\accesshq\tests\webtests\Menu.class
+com\accesshq\tests\webtests\FindByMeasurements.class
+com\accesshq\tests\strategies\MatchingStrategy.class
+com\accesshq\tests\api\AusPost.class
+com\accesshq\tests\webtests\Util.class
+com\accesshq\tests\ui\PlanetTile.class
