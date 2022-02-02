@@ -49,13 +49,13 @@ public class PlanetsTestsSuite extends BaseTestSuite{
         planet = planetPage.getPlanetTile(new DistanceMatch(planetPage.getPlanetByMeasurement(FindByMeasurements.SHORTEST_DIST)));
         System.out.println("The planet closest to the sun is " + planet.getPlanetName() + " at " + planet.getStringDistance() + ".");
 
-        // find planet with the greatest radius
+        /*// find planet with the greatest radius
         planet = planetPage.getPlanetTile(new RadiusMatch(planetPage.getPlanetByMeasurement(FindByMeasurements.GREATEST_RADIUS)));
         System.out.println("The planet with the greatest radius is " + planet.getPlanetName() + " at " + planet.getStringRadius() + ".");
 
         // find planet with the smallest radius
         planet = planetPage.getPlanetTile(new RadiusMatch(planetPage.getPlanetByMeasurement(FindByMeasurements.SHORTEST_RADIUS)));
-        System.out.println("The planet closest to the sun is " + planet.getPlanetName() + " at " + planet.getStringRadius() + ".");
+        System.out.println("The planet closest to the sun is " + planet.getPlanetName() + " at " + planet.getStringRadius() + ".");*/
     }
 
     /*@Test
