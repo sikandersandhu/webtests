@@ -6,7 +6,7 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class WebTestSuite extends BaseTestSuite{
+public class WebTests extends BaseTests {
 
     protected FormsPage formsPage;
 

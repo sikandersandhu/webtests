@@ -6,7 +6,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 
 
-public class AusPostTest {
+public class AusPost {
     @Test
     void testPostCodeSearch()
     {

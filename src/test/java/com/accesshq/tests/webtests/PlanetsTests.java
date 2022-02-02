@@ -2,13 +2,12 @@ package com.accesshq.tests.webtests;
 
 import com.accesshq.tests.strategies.DistanceMatch;
 import com.accesshq.tests.strategies.NameMatch;
-import com.accesshq.tests.strategies.RadiusMatch;
 import com.accesshq.tests.ui.PlanetTile;
 import com.accesshq.tests.ui.PlanetsPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class PlanetsTestsSuite extends BaseTestSuite{
+public class PlanetsTests extends BaseTests {
 
     @Test
     void assertPlanetName(){

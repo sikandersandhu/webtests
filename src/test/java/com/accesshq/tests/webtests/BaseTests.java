@@ -3,7 +3,6 @@ package com.accesshq.tests.webtests;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -12,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class BaseTestSuite {
+public class BaseTests {
 
     protected WebDriver driver;
     protected Menu menu;
@@ -28,10 +27,10 @@ public class BaseTestSuite {
 
         // Selenium grid to run tests in multiple browsers | parallel testing
 
-        //var chromeOptions = new ChromeOptions();
-        var firefoxOptions = new FirefoxOptions();
-        //driver = new RemoteWebDriver (new URL("http://localhost:4444/wd/hub"), chromeOptions);
-        driver = new RemoteWebDriver (new URL("http://localhost:4444/wd/hub"), firefoxOptions);
+        var chromeOptions = new ChromeOptions();
+        //var firefoxOptions = new FirefoxOptions();
+        driver = new RemoteWebDriver (new URL("http://localhost:4444/wd/hub"), chromeOptions);
+        //driver = new RemoteWebDriver (new URL("http://localhost:4444/wd/hub"), firefoxOptions);
 
 
         // set implicit wait time
